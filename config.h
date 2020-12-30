@@ -188,9 +188,9 @@
     #define HOMING_CYCLE_4 (1<<AXIS_1) // Home X axis
     #define HOMING_CYCLE_5 (1<<AXIS_2) // Home Y axis
   #else // Classic 3 axis
-    #define HOMING_CYCLE_0 (1<<AXIS_3) // Home Z axis first to clear workspace.
-    #define HOMING_CYCLE_1 (1<<AXIS_1) // Home X axis
-    #define HOMING_CYCLE_2 (1<<AXIS_2) // Home Y axis
+    #define HOMING_CYCLE_0 ((1<<AXIS_1)|(1<<AXIS_2)) // Home X and Y axes together.
+    //#define HOMING_CYCLE_1 (1<<AXIS_1) // Home X axis
+    //#define HOMING_CYCLE_2 (1<<AXIS_2) // Home Y axis
   #endif
 #else
   #define HOMING_CYCLE_0 (1<<AXIS_3)                // REQUIRED: First move Z to clear workspace.
