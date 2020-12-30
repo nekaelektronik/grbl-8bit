@@ -178,8 +178,8 @@
     #define HOMING_CYCLE_0 (1<<AXIS_3) // Home Z axis first to clear workspace.
     #define HOMING_CYCLE_1 (1<<AXIS_1) // Home X axis
     #define HOMING_CYCLE_2 (1<<AXIS_2) // Home Y axis
-    //#define HOMING_CYCLE_3 (1<<AXIS_4) // Home 4th axis (A)
-    //#define HOMING_CYCLE_4 (1<<AXIS_5) // Home 5th axis (B)
+    #define HOMING_CYCLE_3 (1<<AXIS_4) // Home 4th axis (A)
+    #define HOMING_CYCLE_4 (1<<AXIS_5) // Home 5th axis (B)
   #elif N_AXIS == 6 // 6 axis : homing
     #define HOMING_CYCLE_0 (1<<AXIS_3) // Home Z axis first to clear workspace.
     #define HOMING_CYCLE_1 (1<<AXIS_4) // Home 4th axis (A)
