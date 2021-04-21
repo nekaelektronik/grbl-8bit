@@ -51,32 +51,32 @@
 #ifdef DEFAULTS_RAMPS_BOARD
   // 4, 5 & 6 axis support only for RAMPS 1.4 (for the moment :-)...)
   #define N_AXIS 6            // Number of axes
-  #define N_AXIS_LINEAR 6     // Number of linears axis
+  #define N_AXIS_LINEAR 0     // Number of linears axis
 #else
   #define N_AXIS 3 // Number of axes = 3 if not DEFAULTS_RAMPS_BOARD
 #endif
 
 #define AXIS_1 0        // Axis indexing value. Must start with 0 and be continuous.
-#define AXIS_1_NAME 'X' // Axis names must be in X, Y, Z, A, B, C, U, V & W.
+#define AXIS_1_NAME 'A' // Axis names must be in X, Y, Z, A, B, C, U, V & W.
 #define AXIS_2 1
-#define AXIS_2_NAME 'Y'
+#define AXIS_2_NAME 'B'
 #define AXIS_3 2
-#define AXIS_3_NAME 'Z'
+#define AXIS_3_NAME 'C'
 
 #if N_AXIS <3
   #error "N_AXIS must be >= 3. N_AXIS < 3 is not implemented."
 #endif
 #if N_AXIS > 3
   #define AXIS_4 3
-  #define AXIS_4_NAME 'A' // Letter of axis number 4
+  #define AXIS_4_NAME 'D' // Letter of axis number 4
 #endif
 #if N_AXIS > 4
   #define AXIS_5 4
-  #define AXIS_5_NAME 'B' // Letter of axis number 5
+  #define AXIS_5_NAME 'E' // Letter of axis number 5
 #endif
 #if N_AXIS > 5
   #define AXIS_6 5
-  #define AXIS_6_NAME 'C' // Letter of axis number 6
+  #define AXIS_6_NAME 'H' // Letter of axis number 6
 #endif
 #if N_AXIS > 6
   #error "N_AXIS must be <= 6. N_AXIS > 6 is not implemented."
