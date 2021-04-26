@@ -57,26 +57,26 @@
 #endif
 
 #define AXIS_1 0        // Axis indexing value. Must start with 0 and be continuous.
-#define AXIS_1_NAME 'A' // Axis names must be in X, Y, Z, A, B, C, U, V & W.
+#define AXIS_1_NAME 'B' // Axis names must be in X, Y, Z, A, B, C, U, V & W.
 #define AXIS_2 1
-#define AXIS_2_NAME 'B'
+#define AXIS_2_NAME 'C'
 #define AXIS_3 2
-#define AXIS_3_NAME 'C'
+#define AXIS_3_NAME 'D'
 
 #if N_AXIS <3
   #error "N_AXIS must be >= 3. N_AXIS < 3 is not implemented."
 #endif
 #if N_AXIS > 3
   #define AXIS_4 3
-  #define AXIS_4_NAME 'D' // Letter of axis number 4
+  #define AXIS_4_NAME 'E' // Letter of axis number 4
 #endif
 #if N_AXIS > 4
   #define AXIS_5 4
-  #define AXIS_5_NAME 'E' // Letter of axis number 5
+  #define AXIS_5_NAME 'H' // Letter of axis number 5
 #endif
 #if N_AXIS > 5
   #define AXIS_6 5
-  #define AXIS_6_NAME 'H' // Letter of axis number 6
+  #define AXIS_6_NAME 'A' // Letter of axis number 6
 #endif
 #if N_AXIS > 6
   #error "N_AXIS must be <= 6. N_AXIS > 6 is not implemented."
